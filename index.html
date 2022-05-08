@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="En esta página podras usar una calculadora">
+    <link rel="icon" href="assets/team-arroz.jpg">
+    <link rel="apple-touch-icon" href="assets/team-arroz.jpg">
+    <meta name="theme-color" content="#FF6600">
+
+    <meta property="og:title" content="Calculadora">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gintokiyt.github.io/calculadora">
+    <meta property="og:image" content="https://thumbs.dreamstime.com/b/ejemplo-lindo-de-kawaii-del-cuenco-arroz-138774336.jpg">
+    <meta property="og:description" content="En esta página podras usar una calculadora">
+    <meta property="og:site_name" content="Calculadora">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!----METAS DE PWA-->
+    <meta name="theme-color" content="#FF6600">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./pwa/images/icons/icon-512x512.png">
+    <link rel="apple-touch-icon" href="./pwa/images/icons/icon-512x512.png">
+    <link rel="apple-touch-startup-image" href="./pwa/images/icons/icon-512x512.png">
+
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-72x72.png"/>
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-96x96.png"/>
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-128x128.png"/>
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-144x144.png"/>
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-152x152.png"/>
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-192x192.png"/>
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-256x256.png"/>
+    <link rel="apple-touch-icon" href="assets/icons/team-arroz-512x512.png"/>
+
+    <meta name="apple-mobile-web-app-status-bar" content="#FF6600" />
+
+    <title>Calculadora</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <input class="result" type="text" value="2 x 2 = 4" readonly>
+        <button class="clear">C</button>
+        <button class="punto">.</button>
+        <button class="cero">0</button>
+        <button class="uno">1</button>
+        <button class="dos">2</button>
+        <button class="tres">3</button>
+        <button class="cuatro">4</button>
+        <button class="cinco">5</button>
+        <button class="seis">6</button>
+        <button class="siete">7</button>
+        <button class="ocho">8</button>
+        <button class="nueve">9</button>
+        <button class="suma">+</button>
+        <button class="resta">-</button>
+        <button class="multiplicacion">x</button>
+        <button class="division">÷</button>
+        <button class="igual">=</button>
+    </div>
+
+    <script src="./regist_serviceWorker.js"></script> 
+    <script>
+      $(function(){
+    //Precarga de la pagina se ejecuta solo una vez
+    setTimeout(
+        ()=>{
+            $(".cargando").hide(); 
+         } , 50
+     );
+     });
+    </script>
+</body>
+</html>

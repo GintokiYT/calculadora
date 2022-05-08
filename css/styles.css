@@ -1,0 +1,131 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #141313;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    max-width: 300px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "result result result clear"
+        "uno dos tres suma"
+        "cuatro cinco seis resta"
+        "siete ocho nueve multiplicacion"
+        "division cero punto igual";
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px repeat(5, 75px);
+
+    gap: .3rem;
+}
+
+.container h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo;
+}
+
+button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    background-color: #2f3332;
+}
+
+input{
+    border-radius: .3rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: #2f3332;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.container .result{
+    grid-area: result;
+}
+
+.container .clear{
+    grid-area: clear;
+    background-color: #e91a1a;
+}
+
+.container .uno{
+    grid-area: uno;
+}
+.container .dos{
+    grid-area: dos;
+}
+.container .tres{
+    grid-area: tres;
+}
+.container .tres{
+    grid-area: tres;
+}
+.container .cuatro{
+    grid-area: cuatro;
+}
+.container .cinco{
+    grid-area: cinco;
+}
+.container .seis{
+    grid-area: seis;
+}
+.container .siete{
+    grid-area: siete;
+}
+.container .ocho{
+    grid-area: ocho;
+}
+.container .nueve{
+    grid-area: nueve;
+}
+.container .suma{
+    grid-area: suma;
+}
+.container .resta{
+    grid-area: resta;
+}
+.container .multiplicacion{
+    grid-area: multiplicacion;
+}
+.container .division{
+    grid-area: division;
+}
+.container .cero{
+    grid-area: cero;
+}
+.container .punto{
+    grid-area: punto;
+}
+.container .igual{
+    grid-area: igual;
+}
