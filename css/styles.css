@@ -35,10 +35,17 @@ body{
         "siete ocho nueve multiplicacion"
         "division cero punto igual";
 
-    grid-template-columns: repeat(4, 27%);
+    grid-template-columns: repeat(4, 70px);
     grid-template-rows: repeat(6, 75px);
 
     gap: .3rem;
+}
+
+@media screen and (min-width: 375px) {
+    .container{
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(6, 80px);
+    }
 }
 
 .container h1{
