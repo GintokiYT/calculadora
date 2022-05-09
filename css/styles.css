@@ -22,10 +22,10 @@ body{
 }
 
 .container{
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
-
     display: grid;
+    justify-content: center;
 
     grid-template-areas:
         "titulo titulo titulo titulo"
@@ -35,8 +35,8 @@ body{
         "siete ocho nueve multiplicacion"
         "division cero punto igual";
 
-    grid-template-columns: repeat(4, 70px);
-    grid-template-rows: 60px repeat(5, 75px);
+    grid-template-columns: repeat(4, 27%);
+    grid-template-rows: repeat(6, 75px);
 
     gap: .3rem;
 }
