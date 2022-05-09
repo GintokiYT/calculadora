@@ -48,37 +48,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora</h1>
-        <input class="result" type="text" value="2 x 2 = 4" readonly>
-        <button class="clear">C</button>
-        <button class="punto">.</button>
-        <button class="cero">0</button>
-        <button class="uno">1</button>
-        <button class="dos">2</button>
-        <button class="tres">3</button>
-        <button class="cuatro">4</button>
-        <button class="cinco">5</button>
-        <button class="seis">6</button>
-        <button class="siete">7</button>
-        <button class="ocho">8</button>
-        <button class="nueve">9</button>
-        <button class="suma">+</button>
-        <button class="resta">-</button>
-        <button class="multiplicacion">x</button>
-        <button class="division">÷</button>
-        <button class="igual">=</button>
+        <h1>🌟Calculadora🌟</h1>
+        <div class="result">
+            <div class="output"></div>
+            <div class="input" data-placeholder="0"></div>
+        </div>
+        <button class="clear" value="C">C</button>
+        <button class="punto" value=".">.</button>
+        <button class="cero" value="0">0</button>
+        <button class="uno" value="1">1</button>
+        <button class="dos" value="2">2</button>
+        <button class="tres" value="3">3</button>
+        <button class="cuatro" value="4">4</button>
+        <button class="cinco" value="5">5</button>
+        <button class="seis" value="6">6</button>
+        <button class="siete" value="7">7</button>
+        <button class="ocho" value="8">8</button>
+        <button class="nueve" value="9">9</button>
+        <button class="suma" value="+">+</button>
+        <button class="resta" value="-">-</button>
+        <button class="multiplicacion" value="x">x</button>
+        <button class="division" value="/">÷</button>
+        <button class="igual" value="=">=</button>
     </div>
 
-    <script src="./regist_serviceWorker.js"></script> 
+    <script src="js/app.js"></script>
+
+    <!-- <script src="regist_serviceWorker.js"></script> 
     <script>
-      $(function(){
     //Precarga de la pagina se ejecuta solo una vez
-    setTimeout(
-        ()=>{
-            $(".cargando").hide(); 
-         } , 50
-     );
-     });
-    </script>
+        $(function(){
+            setTimeout(
+                () => {
+                    $(".cargando").hide(); 
+                } , 50
+            );
+        });
+    </script> -->
 </body>
 </html>

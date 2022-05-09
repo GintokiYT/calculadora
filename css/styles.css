@@ -35,7 +35,7 @@ body{
         "siete ocho nueve multiplicacion"
         "division cero punto igual";
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 70px);
     grid-template-rows: 60px repeat(5, 75px);
 
     gap: .3rem;
@@ -58,15 +58,13 @@ button{
     background-color: #2f3332;
 }
 
-input{
+.result{
     border-radius: .3rem;
-    font-size: 1rem;
     border: none;
     outline: none;
     background-color: #2f3332;
     font-weight: bold;
     font-size: 1.5rem;
-    padding-left: 1rem;
 }
 
 .container .result{
@@ -128,4 +126,32 @@ input{
 }
 .container .igual{
     grid-area: igual;
+}
+
+.output{
+    text-align: end;
+    height: calc(75px/2);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: .7rem;
+    padding-left: .7rem;
+    color: #fff5;
+    overflow: hidden;
+}
+.input{
+    text-align: start;
+    height: calc(75px/2);
+    padding-right: .7rem;
+    padding-left: .7rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.input:empty:not(:focus):before {
+    content: attr(data-placeholder);
+    color: #fff5;
 }
