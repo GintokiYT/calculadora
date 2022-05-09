@@ -129,12 +129,16 @@ igual.addEventListener('click', () => {
     output.innerHTML += `${input.innerHTML}`;
     const resultado = () =>{
         const operacion =  output.innerHTML.replace('x', '*');
-        if(operacion === Number.POSITIVE_INFINITY || operacion == Number.NEGATIVE_INFINITY){
-            return '0';
-        }
         return eval(operacion); 
     };
-    input.innerHTML = resultado();
+
+    const aux = String(resultado());
+    if(aux === 'Infinity'){
+        input.innerHTML = 0;
+    }
+    else{
+        input.innerHTML = resultado();
+    }
 
     if (output.innerHTML.indexOf('+') === -1 || output.innerHTML.indexOf('-') === -1 || 
         output.innerHTML.indexOf('x') === -1 || output.innerHTML.indexOf('/') === -1) {
