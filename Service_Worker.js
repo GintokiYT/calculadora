@@ -5,6 +5,7 @@ const CACHE_NAME = 'Calculadora v1.0',
     './',
     './index.html',
     './css/styles.css',
+    './js/app.js',
 
     './regist_serviceWorker.js',
     './pwa/images/icons/icon-512x512.png',
